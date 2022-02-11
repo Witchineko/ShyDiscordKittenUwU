@@ -168,6 +168,9 @@ const ui = (function () {
             .addEventListener("click", function () {
                 ui.hideNow();
                 ui.playAgain();
+                if (document.body.classList.contains("UwU")) {
+                    playSound();
+                }
             });
 
         document.querySelector("#result").className = "active";
@@ -176,9 +179,6 @@ const ui = (function () {
 
     //Play sound
     function gameOver(state) {
-        if (document.body.classList.contains("UwU")) {
-            playSound();
-        }
         ui.showNow();
     }
 
