@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>DiscordKittenGame</title>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
+  <link rel="stylesheet" href="scripts/style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!--game header and control-->
+<!--score pannel-->
+<main>
+  <header>
+    <div class="container">
+      <div class="row ">
+        <div class="col">
+          <h1 id="player-name"></h1>
+        </div>
+      </div>
+    </div>
+  </header>
+  <section class="score-panel ">
+    <div class="container">
+      <div class="row">
+        <div class="wraper">
+          <div class="col">
+            <ul class="stars">
+              <li><i class="fa fa-star"></i></li>
+              <li><i class="fa fa-star"></i></li>
+              <li><i class="fa fa-star"></i></li>
+              <li><i class="fa fa-star"></i></li>
+              <li><i class="fa fa-star"></i></li>
+            </ul>
+            <div class="timer">
+              <span>00 : 00 : 00</span>
+            </div>
+          </div>
+          <div class="col">
+            <div class="restart">
+              <i class="fa fa-rotate-right"></i>
+            </div>
+            <div class="moves"> Moves : 0</div>
+            <div class="exit">
+              <i class="fa-solid fa-arrow-right-to-bracket"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--game cards-->
+  <section class="card-home">
+    <div class="container game-body">
+      <div class="row game-wraper">
+        <!--cards distention-->
+        <ul class="deck">
+        </ul>
+        <!--cards distention-->
+      </div>
+    </div>
+  </section>
+</main>
+<!--game starter-->
+<section id="gamestarting">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <div class="wraper">
+          <div class="loading">
+            <img src="./src/loading-buffering.gif">
+          </div>
+          <h1>Shy Discord Kitten matching card game </h1>
+          <p> How do you identify? </p>
+          <div class="callToAction" id="newplayer">
+            <div class="AK-btn">
+              <input type="text" id="palyername" value="furry" placeholder="Enter your name">
+            </div>
+            <p>now chose some game cards</p>
+            <div class="chose">
+              <div class="chose-item" data-type="DeadByDaylight" title="Dead By Daylight cards">
+                <span class="chose-icon"><i class="fa fa-check-square"></i> </span>
+                <img class="img-resposive" src="./src/icons8-dead-by-daylight.svg">
+              </div>
+              <div class="chose-item" data-type="LeagueOfLegends" title="League Of Legends cards">
+                <span class="chose-icon"><i class="fa fa-check-square"></i> </span>
+                <img class="img-resposive" src="./src/icons8-league-of-legends.svg">
+              </div>
+              <div class="chose-item" data-type="WorldOfWarcraft" title="World Of Warcraft cards">
+                <span class="chose-icon"><i class="fa fa-check-square"></i> </span>
+                <img class="img-resposive" src="./src/icons8-world-of-warcraft.svg">
+              </div>
+              <div class="chose-item" data-type="UwU" title="UwU cards">
+                <span class="chose-icon"><i class="fa fa-check-square"></i> </span>
+                <img class="img-resposive" src="./src/icons8-uwu.svg">
+              </div>
+            </div>
+            <div class="AK-btn">
+              <input type="submit" value="start" class="AK-btn" id="startTheGame">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--game starter-->
+<!--game modal-->
+<section id="result" class="">
+  <div class="modal">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <div class="modal-body">
+            <div class="modal-content text-center">
+              <p>gg ez <span id="playername"></span> </p>
+              <ul class="stars">
+                <li><i class="fa fa-star"></i></li>
+                <li><i class="fa fa-star"></i></li>
+                <li><i class="fa fa-star"></i></li>
+                <li><i class="fa fa-star"></i></li>
+                <li><i class="fa fa-star"></i></li>
+              </ul>
+              <div class="AK-btn"><button id="play-again">play again</button></div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--game modal-->
+<!-- partial -->
+  <script  src="scripts/script.js"></script>
+
+</body>
+</html>
