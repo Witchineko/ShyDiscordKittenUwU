@@ -173,7 +173,7 @@ html, body {
 body {
   transition: background 1s linear;
   font-family: Arial;
-  background-image: url(src/gaming-pattern.png);
+  background-image: url(/src/gaming-pattern.png);
   background-blend-mode: overlay;
   height: fit-content;
   background-color: #1c0c2e;
@@ -181,21 +181,21 @@ body {
 }
 
 body.DeadByDaylight {
-  background-image: url(src/dbd_bg.jpg);
+  background-image: url(/src/dbd_bg.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 body.LeagueOfLegends {
-  background-image: url(src/lol_bg.jpg);
+  background-image: url(/src/lol_bg.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 body.WorldOfWarcraft {
-  background-image: url(src/wow_bg.jpg);
+  background-image: url(/src/wow_bg.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
