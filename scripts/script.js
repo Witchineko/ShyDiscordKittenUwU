@@ -134,7 +134,6 @@ function creatProfile(playerName, gameType, cards) {
 
         return { gameState };
     })(playerName, gameType, cards);
-    // // // // // // // console.log(data);
     return { data, current: null };
 }
 
@@ -422,5 +421,5 @@ function int() {
             }
         });
 }
-
+console.log("Didn't expect you yo live so long, so here is it. A game just for you Saeed. Hope you enjoy it, you unstable wh#@e.");
 int();
